@@ -4,12 +4,12 @@ import azure.cognitiveservices.speech as speechsdk
 import openai
 
 #clé d'API openai
-openai.api_key ="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"
+openai.api_key ="API OPENAI"
 
 #configuration de reconnaissance vocale
 speech_config = speechsdk.SpeechConfig(
     speech_recognition_language="fr-FR",
-    subscription="48d09128b4cf44aa8c70d9e528261235",
+    subscription="AZURE KEY",
     region="francecentral"
 )
 
@@ -17,7 +17,7 @@ speech_config = speechsdk.SpeechConfig(
 speech_synthesizer = speechsdk.SpeechSynthesizer(
     speech_config= speechsdk.SpeechConfig(
         speech_recognition_language="fr-FR",
-        subscription="48d09128b4cf44aa8c70d9e528261235",
+        subscription="AZURE KEY",
         region="francecentral"
     )
 )
